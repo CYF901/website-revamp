@@ -3,49 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香港腦癇基金會 - Website Revamp</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            text-align: center;
-            background: #f5f5f5;
-        }
-        h1 { color: #007549; }
-        .status { 
-            background: #e8f5e9; 
-            padding: 20px; 
-            border-radius: 8px; 
-            margin: 30px 0;
-        }
-        .progress { font-size: 18px; color: #666; }
-    </style>
+    <meta name="description" content="香港腦癇基金會 - 共建腦癇友善社會。認識腦癇症、教育資源、最新消息及活動。">
+    <title>香港腦癇基金會 | Epilepsy Foundation of Hong Kong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>🇭🇰 香港腦癇基金會</h1>
-    <h2>Epilepsy Foundation of Hong Kong</h2>
-    
-    <div class="status">
-        <h3>✅ 第一步完成：GitHub Repository 建立成功！</h3>
-        <p class="progress">Repository: CYF901/website-revamp</p>
-    </div>
-    
-    <div class="status" style="background: #fff3e0;">
-        <h3>🔄 下一步：網站開發中</h3>
-        <p>我哋正在準備完整嘅網站結構，包含：</p>
-        <ul style="text-align: left; display: inline-block;">
-            <li>📚 知識庫頁面</li>
-            <li>🔗 社交媒體參考區塊</li>
-            <li>📰 最新消息及活動</li>
-            <li>📖 腦癇五稜鏡出版</li>
-        </ul>
-    </div>
-    
-    <p style="color: #999; margin-top: 50px;">
-        預覽網址：https://cyf901.github.io/website-revamp<br>
-        （GitHub Pages 啟用需要幾分鐘時間）
-    </p>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/EFHK-logo.gif" alt="香港腦癇基金會" onerror="this.style.display='none'">
+                <span class="logo-text">香港腦癇基金會</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="選單">☰</button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">主頁</a></li>
+                    <li><a href="knowledge-base.html">認識腦癇症</a></li>
+                    <li><a href="education.html">教育資源</a></li>
+                    <li><a href="publications.html">腦癇五稜鏡</a></li>
+                    <li><a href="social-media-reference.html">社交媒體參考</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>共建腦癇友善社會</h1>
+            <p>香港腦癇基金會致力於提高公眾對腦癇症的認識、支持患者及其家人、推動研究與教育。</p>
+            <a href="knowledge-base.html" class="hero-cta">了解腦癇症 →</a>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>認識腦癇症</h2>
+                <p>了解腦癇症的基本知識、症状與急救方法</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🧠</div>
+                    <h3>腦癇症是什麼？</h3>
+                    <p>認識腦癇症的成因、分類與影響</p>
+                    <a href="knowledge-base.html#what-is-epilepsy">了解更多 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💊</div>
+                    <h3>治療與藥物</h3>
+                    <p>了解現行治療方法與藥物選擇</p>
+                    <a href="knowledge-base.html#treatment">了解更多 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚑</div>
+                    <h3>急救知識</h3>
+                    <p>學習遇到腦癇發作時的正確處理方法</p>
+                    <a href="knowledge-base.html#first-aid">了解更多 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>數據與現況</h3>
+                    <p>香港腦癇症患者統計數據</p>
+                    <a href="knowledge-base.html#statistics">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Base Preview -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>📚 知識庫</h2>
+                <p>全面的腦癇症資訊，適合患者、家屬及公眾人士</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">👨‍👩‍👧</div>
+                    <h3>給患者及家人</h3>
+                    <p>日常生活管理、心理支持、學校與工作建議</p>
+                    <a href="knowledge-base.html#patients-family">查看內容 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏫</div>
+                    <h3>給學校及機構</h3>
+                    <p>校園支援、老師培訓、學生互助資源</p>
+                    <a href="knowledge-base.html#school-institution">查看內容 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>教育影片</h3>
+                    <p>淺易易明的教育影片，深入淺出介紹腦癇症</p>
+                    <a href="education.html#videos">觀看影片 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎧</div>
+                    <h3>Podcast 腦癇小知識</h3>
+                    <p>隨時隨地收聽最新的腦癇資訊</p>
+                    <a href="education.html#podcast">收聽 Podcast →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Reference Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔗 社交媒體參考</h2>
+                <p>關注我們的社交平台，獲取最新資訊與活動動態</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">📘</div>
+                    <h3>Facebook</h3>
+                    <p>最新活動資訊、活動回顧、社群分享</p>
+                    <a href="https://www.facebook.com/EFHK.org" target="_blank" rel="noopener">前往 Facebook →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>活動相片、故事分享、影像內容</p>
+                    <a href="https://www.instagram.com/efhkorg/" target="_blank" rel="noopener">前往 Instagram →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">▶️</div>
+                    <h3>YouTube</h3>
+                    <p>教育影片、活動紀錄、專家訪談</p>
+                    <a href="https://www.youtube.com/@epilepsyfoundationHK" target="_blank" rel="noopener">前往 YouTube →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔗</div>
+                    <h3>Linktree</h3>
+                    <p>一站式連結所有平台</p>
+                    <a href="http://bit.ly/efhklink" target="_blank" rel="noopener">前往 Linktree →</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-xl">
+                <a href="social-media-reference.html" class="hero-cta" style="background: var(--primary);">查看完整社交媒體中心 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>📰 最新消息及活動</h2>
+                <p>關注我們的最新動態，參與活動共建友善社會</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎪</div>
+                    <h3>腦癇友善同樂祭</h3>
+                    <p>年度大型活動，透過互動遊戲與表演，讓公眾認識腦癇症</p>
+                    <a href="activities.html#funfest">了解更多 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>國際腦癇日</h3>
+                    <p>每年6月第二個星期一，與全球同步推廣腦癇症認知</p>
+                    <a href="activities.html#ied">了解更多 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏥</div>
+                    <h3>腦癇友善教育計劃</h3>
+                    <p>學校、社區、教育機構培訓與資源</p>
+                    <a href="activities.html#education-program">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📖 出版刊物</h2>
+                <p>我們的期刊、報告與教育資源</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🔺</div>
+                    <h3>腦癇五稜鏡</h3>
+                    <p>季度通訊，提供最新資訊、專家解答與生活建議</p>
+                    <a href="publications.html#newsletter">閱讀期刊 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📓</div>
+                    <h3>腦癇日記</h3>
+                    <p>幫助患者記錄發作情況與追蹤治療效果</p>
+                    <a href="publications.html#diary">了解更多 →</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📑</div>
+                    <h3>專題文章</h3>
+                    <p>深入分析腦癇症的各個面向</p>
+                    <a href="publications.html#articles">閱讀文章 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation CTA -->
+    <section class="section bg-primary">
+        <div class="container text-center">
+            <h2 style="color: white;">支持我們</h2>
+            <p style="color: white; opacity: 0.9; max-width: 600px; margin: 0 auto var(--space-xl);">
+                您的支持令我們能夠繼續為腦癇症患者及家屬提供支援服務，共建一個更友善的社會。
+            </p>
+            <a href="donation.html" class="hero-cta" style="background: var(--secondary);">立即捐助 →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/EFHK.org" target="_blank" rel="noopener" title="Facebook">📘</a>
+                <a href="https://www.instagram.com/efhkorg/" target="_blank" rel="noopener" title="Instagram">📸</a>
+                <a href="https://www.youtube.com/@epilepsyfoundationHK" target="_blank" rel="noopener" title="YouTube">▶️</a>
+                <a href="http://bit.ly/efhklink" target="_blank" rel="noopener" title="Website">🔗</a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">主頁</a>
+                <a href="knowledge-base.html">認識腦癇症</a>
+                <a href="education.html">教育資源</a>
+                <a href="publications.html">腦癇五稜鏡</a>
+                <a href="contact.html">聯絡我們</a>
+            </div>
+            <p style="opacity: 0.6; font-size: 0.875rem;">
+                © 2024 香港腦癇基金會 | Epilepsy Foundation of Hong Kong<br>
+                本網站為重組測試版本 | This is a revamp testing version
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.querySelector('.main-nav');
+            const toggle = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
