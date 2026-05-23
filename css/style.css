@@ -1,11 +1,11 @@
 /* EFHK Website Revamp - Design System */
 :root {
-    /* Brand Colors */
-    --primary: #007549;
-    --primary-dark: #005a36;
-    --primary-light: #00a066;
-    --secondary: #f5a623;
-    --secondary-dark: #d4891a;
+    /* Brand Colors - Vibrant Orange (#F26522) */
+    --primary: #F26522;
+    --primary-dark: #d45a1a;
+    --primary-light: #ff7a3d;
+    --secondary: #0066b3;
+    --secondary-dark: #004c82;
     --accent: #e74c3c;
     --white: #ffffff;
     --off-white: #f8f9fa;
@@ -431,6 +431,122 @@ a:hover {
     .header-inner {
         flex-wrap: wrap;
     }
+}
+
+/* Donation Section */
+.donation-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: var(--space-3xl) 0;
+}
+
+.donation-section .donation-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.donation-section .donation-header h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.donation-section .donation-header p {
+    color: var(--white);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.donation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+}
+
+@media (max-width: 768px) {
+    .donation-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.donation-intro {
+    background: rgba(255,255,255,0.1);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+}
+
+.donation-intro p {
+    color: var(--white);
+    opacity: 0.95;
+    margin-bottom: var(--space-md);
+}
+
+.donation-intro a {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.donation-note {
+    background: rgba(255,255,255,0.15);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    margin-top: var(--space-lg) !important;
+    border-left: 4px solid var(--secondary);
+}
+
+.donation-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.donation-method {
+    background: rgba(255,255,255,0.1);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+}
+
+.donation-method h3 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+    font-size: 1.2rem;
+}
+
+.donation-method p {
+    color: var(--white);
+    opacity: 0.9;
+    margin-bottom: var(--space-sm);
+}
+
+.donation-method a {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.account-name {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-style: italic;
+}
+
+.donation-cta {
+    text-align: center;
+}
+
+.donation-cta .hero-cta {
+    background: var(--secondary) !important;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.donation-cta .hero-cta:hover {
+    background: var(--secondary-dark) !important;
+    transform: translateY(-2px);
 }
 
 /* Utilities */
